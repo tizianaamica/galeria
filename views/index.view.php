@@ -29,15 +29,18 @@
                     </a>
                 </div>
             <?php endforeach;?>
-
+            
             <div class="paginacion">
                 <?php if($pagina_actual > 1):?>
                     <a href="index.php?p=<?php echo $pagina_actual - 1 ?>" class="izquierda"><i class="fa fa-long-arrow-left"></i> Pagina Anterior</a>            
+                    <a href="subir.php" class="derecha">Subir Foto</a>
                 <?php endif ?>
 
                 <?php if($total_paginas != $pagina_actual ):?>
                     <a href="index.php?p=<?php echo $pagina_actual + 1 ?>" class="derecha">Pagina Siguiente <i class="fa fa-long-arrow-right"></i></a>                     
+                    <a href="subir.php">Subir Foto</a>
                 <?php endif ?>
+                
                 <!--
                 <a href="#" class="izquierda"><i class="fa fa-long-arrow-left"></i> Pagina Anterior</a>            
                 <a href="#" class="derecha">Pagina Siguiente <i class="fa fa-long-arrow-right"></i></a>            

@@ -42,6 +42,9 @@ a:hover {
     float: right;
 }
 
+.subir {
+    justify-content: center;
+}
 /* --- Header ---*/
 
 header {
